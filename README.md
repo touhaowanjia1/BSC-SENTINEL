@@ -1,11 +1,49 @@
-<div align="center">
+# BSC Block Sentinel 🚀
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+一个高性能的币安智能链 (BSC) 实时区块监控仪表盘。支持实时出块速度显示、目标区块到达时间估算，并结合 Gemini AI 提供网络状态分析。
 
-  <h1>Built with AI Studio</h2>
+## ✨ 功能特性
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+- **实时同步**：通过 BSC 公共 RPC 节点实时获取最新区块高度。
+- **速度监测**：自动计算过去 12 个区块的平均出块时间。
+- **到达估算**：输入目标区块 ID，精确计算剩余时间及预计到达日期。
+- **可视化图表**：使用 Recharts 展示出块频率的波动情况。
+- **AI 智能分析**：集成 Google Gemini 3 Flash 模型，提供专业的网络预测建议。
+- **极速体验**：基于 React 18 + Tailwind CSS，极简、响应式设计。
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## 🚀 部署指南
 
-</div>
+### 方法 A：使用 Vercel (最简单)
+
+1. 将代码推送到您的 GitHub 仓库。
+2. 登录 [Vercel](https://vercel.com/)。
+3. 点击 **"Add New"** -> **"Project"**。
+4. 导入您的 GitHub 仓库。
+5. **重要：** 在 "Environment Variables" 中添加 `API_KEY`（您的 Google Gemini API Key）。
+6. 点击 **"Deploy"**。
+
+### 方法 B：本地运行
+
+1. 克隆仓库：
+   ```bash
+   git clone <your-repo-url>
+   ```
+2. 安装依赖 (假设您使用的是 Vite/npm 结构):
+   ```bash
+   npm install
+   ```
+3. 运行项目:
+   ```bash
+   npm run dev
+   ```
+
+## 🛠 技术栈
+
+- **Frontend**: React, TypeScript, Tailwind CSS
+- **Charts**: Recharts
+- **API**: BSC Public RPC, Google Gemini API (GenAI SDK)
+- **Icons**: Font Awesome
+
+## 📄 开源协议
+
+MIT License

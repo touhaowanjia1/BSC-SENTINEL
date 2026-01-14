@@ -1,0 +1,5 @@
+{
+  "name": "BSC Real-time Block Sentinel",
+  "description": "A high-performance dashboard for monitoring Binance Smart Chain block production speeds and calculating target block arrival times with AI-enhanced insights.",
+  "requestFramePermissions": []
+}
